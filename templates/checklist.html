@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>JavaScript - Select/Unselect (Check/Uncheck) all CheckBoxes on Button Click.</title>
+		<script type="text/javascript">
+			function selectAll(){
+				var items=document.getElementsByName('acs');
+				for(var i=0; i<items.length; i++){
+					if(items[i].type=='checkbox')
+						items[i].checked=true;
+				}
+			}
+			function UnSelectAll(){
+				var items=document.getElementsByName('acs');
+				for(var i=0; i<items.length; i++){
+					if(items[i].type=='checkbox')
+						items[i].checked=false;
+				}
+			}
+		</script>
+	</head>
+	<style>
+		.body{
+		color: blue;
+  		font-family: verdana;
+  		font-size: 300%;
+  		align: center
+		}
+	</style>
+<body>
+	<input type="checkbox" name="acs" value="1">Mirrors<br>
+	<input type="checkbox" name="acs" value="1">Tyres<br>
+	<input type="checkbox" name="acs" value="1">Finishing<br>
+	<input type="checkbox" name="acs" value="1">Air Conditioner<br>
+	<input type="checkbox" name="acs" value="1">Seats<br>
+	<input type="checkbox" name="acs" value="1">Gears<br>
+	<p>
+	<input type="button" onclick='selectAll()' value="Select All"/><br><br>
+	<input type="button" onclick='UnSelectAll()' value="Unselect All"/><br><br>
+		<input type="button" onclick='Submit()' value="Submit"/>
+	</p>
+</body>
+</html>
