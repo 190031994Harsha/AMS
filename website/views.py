@@ -63,6 +63,8 @@ def registerPage(request):
          }
     return render(request,'register.html', context)
 
+def tac(request):
+    return render(request, 'tac.html')
 
 @login_required(login_url='home.html')
 def logoutPage(request):
@@ -297,7 +299,7 @@ def gallery(request):
 
     return render ( request, 'gallery.html', context)
 
-def tac(request,pk):
+def tac(request):
     return render(request, 'tac.html')
 
 def check(request,pk):

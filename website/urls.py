@@ -10,6 +10,7 @@ urlpatterns = [
     path('infoGenerated/', views.loadData, name='infoGenerated'),
 	path('carinfo/<str:pk>/',views.carPage, name='carPage'),
 	path('gallery',views.gallery, name='gallery'),
+	path('tac',views.tac, name='tac'),
 
 
 	path('register/', views.registerPage, name='register'),
