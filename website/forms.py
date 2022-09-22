@@ -16,8 +16,8 @@ class createUserForm(UserCreationForm):
         fields  = ['username','email', 'password1','password2']
         widgets ={
            
-            'username':forms.TextInput(attrs={'class':'form-control','placeholder':'John.Doe'}),
-            'email':forms.TextInput(attrs={'class':'form-control','placeholder':'John.Doe@gmial.com'}),
+            'username':forms.TextInput(attrs={'class':'form-control','placeholder':'username'}),
+            'email':forms.TextInput(attrs={'class':'form-control','placeholder':'email'}),
            
         }
 class CustomerUpdate(forms.ModelForm):
